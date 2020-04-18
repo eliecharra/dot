@@ -1,0 +1,17 @@
+*
+!/.gitignore
+
+!/.vim
+!/.vim/colors
+!/.vim/colors/*
+!/.vimrc
+
+!/.tmux.conf
+!/.tmux
+!/.tmux/blue.tmuxtheme
+
+!/.zshrc
+
+!/.gnupg
+!/.gnupg/gpg-agent.conf
+
