@@ -5,7 +5,7 @@
 Install dependencies
 
 ```
-pacman -S tmux zsh xclip vim
+pacman -S tmux zsh xclip vim git fzf
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
