@@ -68,16 +68,18 @@ ZSH_THEME="elie"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z fzf tmux)
+plugins=(git z fzf tmux colored-man-pages)
 
-ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_AUTOCONNECT=false
-
+if [ "$TERMINAL_EMULATOR" != "JetBrains-JediTerm" ]; then
+  ZSH_TMUX_AUTOSTART=true
+  ZSH_TMUX_AUTOCONNECT=false
+fi
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$HOME/bin:$HOME/.tfenv/bin:$HOME/go/go1.15/bin:$HOME/go/bin:$HOME/.local/bin:$PATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
