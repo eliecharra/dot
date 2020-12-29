@@ -1,6 +1,7 @@
 *
 !/README.md
 !/.gitignore
+!/.gitignore_global
 
 !/.vim
 !/.vim/colors
