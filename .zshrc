@@ -94,6 +94,7 @@ export EDITOR='vim'
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
+export DCTL_NO_VERSION_CHECK=true
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -105,3 +106,4 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+autoload -U compinit; compinit
