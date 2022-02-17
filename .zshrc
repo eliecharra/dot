@@ -91,10 +91,7 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$HOME/bin:$HOME/.tfenv/bin:$HOME/go/g
 #   export EDITOR='mvim'
 # fi
 export EDITOR='vim'
-export GPG_TTY=$(tty)
-gpg-connect-agent updatestartuptty /bye >/dev/null
 
-export DCTL_NO_VERSION_CHECK=true
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -107,3 +104,5 @@ export DCTL_NO_VERSION_CHECK=true
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 autoload -U compinit; compinit
+
+source .zshrc_local
