@@ -20,3 +20,7 @@ map <C-V> "+gP
 
 " Fix mouse selection not showing in tmux
 set ttymouse=xterm2
+
+" Set paste mode by default and enable toggle
+set paste
+set pastetoggle=<F2>
