@@ -68,7 +68,7 @@ ZSH_THEME="elie"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z fzf tmux colored-man-pages zsh-aws-vault asdf)
+plugins=(git z fzf tmux colored-man-pages zsh-aws-vault asdf zsh-kubectl-prompt)
 
 if [ "$TERMINAL_EMULATOR" != "JetBrains-JediTerm" ] && ! pstree -s $$ | grep -wq code; then
   ZSH_TMUX_AUTOSTART=true
