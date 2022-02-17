@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/elie/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -68,9 +68,9 @@ ZSH_THEME="elie"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z fzf tmux colored-man-pages zsh-aws-vault emoji-cli)
+plugins=(git z fzf tmux colored-man-pages zsh-aws-vault asdf)
 
-if [ "$TERMINAL_EMULATOR" != "JetBrains-JediTerm" ]; then
+if [ "$TERMINAL_EMULATOR" != "JetBrains-JediTerm" ] && ! pstree -s $$ | grep -wq code; then
   ZSH_TMUX_AUTOSTART=true
   ZSH_TMUX_AUTOCONNECT=false
 fi
