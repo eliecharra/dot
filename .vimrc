@@ -20,6 +20,9 @@ map <C-V> "+gP
 
 " Fix mouse selection not showing in tmux
 set ttymouse=xterm2
+" fix scrolling
+" https://superuser.com/questions/610114/tmux-enable-mouse-scrolling-in-vim-instead-of-history-buffer
+set mouse=a
 
 " Set paste mode by default and enable toggle
 set paste
