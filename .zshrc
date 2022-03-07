@@ -50,7 +50,7 @@ ZSH_THEME="elie"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -79,7 +79,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$HOME/bin:$HOME/.tfenv/bin:$HOME/go/go1.15/bin:$HOME/go/bin:$HOME/.local/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$HOME/go/bin:$HOME/.local/bin:$PATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -105,4 +105,4 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 autoload -U compinit; compinit
 
-source .zshrc_local
+source ${HOME}/.zshrc_local
