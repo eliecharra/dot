@@ -105,4 +105,6 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 autoload -U compinit; compinit
 
-source ${HOME}/.zshrc_local
+if [ -f "${HOME}/.zshrc_local" ]; then
+  source ${HOME}/.zshrc_local
+fi
