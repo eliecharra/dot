@@ -22,3 +22,5 @@
 !/.gnupg/gpg-agent.conf
 
 !/.pam_environment
+
+!/.asdfrc
